@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sinails | Salón de Belleza y Uñas Premium</title>
+    <title>Sinails | Salón de Belleza y Uñas</title>
     <link rel="icon" type="image/x-icon" href="Sinails.ico" />
     <meta
       name="description"
@@ -69,10 +69,10 @@
         loop
         playsinline
         class="hero-video"
-        poster="assets/hero_nails_bg.png"
+        poster="hero_nails_bg.png"
       >
         <!-- Aquí el usuario puede poner su propio video. He dejado un nombre de archivo por defecto -->
-        <source src="assets/video_unas.mp4" type="video/mp4" />
+        <source src="video_unas.mp4" type="video/mp4" />
       </video>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
@@ -255,6 +255,54 @@
                   <i class="fa-solid fa-cart-plus"></i> Añadir
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery">
+      <div class="container reveal">
+        <div class="section-header">
+          <h2>Nuestra Galería</h2>
+          <p>Inspírate con nuestros mejores diseños</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="gallery_1.png" alt="Diseño de uñas elegante" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="gallery_2.png" alt="Diseño de uñas intrincado" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="gallery_3.png" alt="Diseño de uñas minimalista" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="gallery_4.png" alt="Diseño de uñas glamuroso" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="service_5.png" alt="Nail Art Signature" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="service_6.png" alt="Tendencia Glaseada" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fa-regular fa-eye"></i>
             </div>
           </div>
         </div>
@@ -516,6 +564,12 @@
           Agendar
         </button>
       </div>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <button class="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
+      <img class="lightbox-content" id="lightbox-img" src="" alt="Ampliación de galería">
+      <button class="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
     <script src="script.js"></script>
