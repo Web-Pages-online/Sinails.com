@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinails | Salón de Belleza y Uñas Premium</title>
+    <link rel="icon" type="image/x-icon" href="Sinails.ico" />
+    <meta
+      name="description"
+      content="Descubre la elegancia en tus manos con Sinails. Diseños exclusivos, atención personalizada y productos de la más alta calidad."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-text">
+          <span><i class="fa-solid fa-map-pin"></i> Homún, Yucatán</span>
+          <span class="divider">|</span>
+          <span><i class="fa-solid fa-phone"></i> +52 999 442 0354</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <!-- Using an icon and text for logo as placeholder -->
+          <i class="fa-solid fa-spa"></i> Sinails
+        </a>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#servicios" class="btn btn-outline nav-cta">Reserva Ahora</a>
+          <div class="cart-icon-container" id="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge" id="cart-badge">0</span>
+          </div>
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="hero-video"
+        poster="assets/hero_nails_bg.png"
+      >
+        <!-- Aquí el usuario puede poner su propio video. He dejado un nombre de archivo por defecto -->
+        <source src="assets/video_unas.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h2 class="subtitle">Eleva tu estilo</h2>
+        <h1 class="title">Tus manos, <br />una obra de arte</h1>
+        <p class="description">
+          Expertas en el cuidado y embellecimiento de tus uñas. Diseños
+          vanguardistas, clásicos y personalizados con los mejores materiales
+          del mercado.
+        </p>
+        <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+      </div>
+    </header>
+
+    <!-- Services / Products Section (Cart / Agenda) -->
+    <section id="servicios" class="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Servicios Exclusivos</h2>
+          <p>Nuestros tratamientos más solicitados</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card reveal">
+            <div class="service-image">
+              <img src="assets/service_1.png" alt="Manicura Francesa Moderna" />
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="service-info">
+              <h3>Elegancia Clásica</h3>
+              <p>
+                Diseño sutil y sofisticado con acentos delicados. Ideal para el
+                día a día.
+              </p>
+              <div class="service-action">
+                <span class="price">$250.00</span>
+                <button
+                  class="btn btn-small btn-cart"
+                  data-service="Elegancia Clásica"
+                  data-price="250.00"
+                >
+                  <i class="fa-solid fa-cart-plus"></i> Añadir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card reveal">
+            <div class="service-image">
+              <img src="assets/service_2.png" alt="Manicura Glamurosa" />
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="service-info">
+              <h3>Glamour Noche</h3>
+              <p>
+                Tonos rosas con acabados brillantes o difuminados para destacar
+                en cualquier evento.
+              </p>
+              <div class="service-action">
+                <span class="price">$350.00</span>
+                <button
+                  class="btn btn-small btn-cart"
+                  data-service="Glamour Noche"
+                  data-price="350.00"
+                >
+                  <i class="fa-solid fa-cart-plus"></i> Añadir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card reveal">
+            <div class="service-image">
+              <img src="assets/service_3.png" alt="Manicura Sofisticada" />
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="service-info">
+              <h3>Minimalismo Chic</h3>
+              <p>
+                Acabados impecables en tonos neutros o sólidos. La perfección en
+                la simplicidad.
+              </p>
+              <div class="service-action">
+                <span class="price">$300.00</span>
+                <button
+                  class="btn btn-small btn-cart"
+                  data-service="Minimalismo Chic"
+                  data-price="300.00"
+                >
+                  <i class="fa-solid fa-cart-plus"></i> Añadir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card reveal">
+            <div class="service-image">
+              <img src="assets/service_4.png" alt="Extensiones Acrílicas" />
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="service-info">
+              <h3>Esculpido Acrílico</h3>
+              <p>
+                Diseños atrevidos y elegantes con uñas esculpidas, incluyendo
+                forma y longitud a medida.
+              </p>
+              <div class="service-action">
+                <span class="price">$500.00</span>
+                <button
+                  class="btn btn-small btn-cart"
+                  data-service="Esculpido Acrílico"
+                  data-price="500.00"
+                >
+                  <i class="fa-solid fa-cart-plus"></i> Añadir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card reveal">
+            <div class="service-image">
+              <img src="assets/service_5.png" alt="Nail Art Personalizado" />
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="service-info">
+              <h3>Nail Art Signature</h3>
+              <p>
+                Detalles artísticos a mano alzada, efectos marmoleados y toques
+                de hoja de oro para un look único.
+              </p>
+              <div class="service-action">
+                <span class="price">$450.00</span>
+                <button
+                  class="btn btn-small btn-cart"
+                  data-service="Nail Art Signature"
+                  data-price="450.00"
+                >
+                  <i class="fa-solid fa-cart-plus"></i> Añadir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card reveal">
+            <div class="service-image">
+              <img src="assets/service_6.png" alt="Tendencia Glaseada" />
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="service-info">
+              <h3>Tendencia Pearl</h3>
+              <p>
+                Efecto perlado o glaseado sobre uña natural para un brillo
+                sutil, minimalista y sofisticado.
+              </p>
+              <div class="service-action">
+                <span class="price">$320.00</span>
+                <button
+                  class="btn btn-small btn-cart"
+                  data-service="Tendencia Pearl"
+                  data-price="320.00"
+                >
+                  <i class="fa-solid fa-cart-plus"></i> Añadir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="nosotros" class="features">
+      <div class="container reveal">
+        <div class="section-header">
+          <h2>¿Por qué elegirnos?</h2>
+          <p>La diferencia está en los detalles</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fa-solid fa-gem feature-icon"></i>
+            <h3>Productos Premium</h3>
+            <p>
+              Usamos solo las mejores marcas del mercado para un acabado
+              impecable y duradero.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-star feature-icon"></i>
+            <h3>Diseños a la Medida</h3>
+            <p>
+              Nail Art personalizado a mano alzada para que tus uñas sean
+              únicas.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-shield-halved feature-icon"></i>
+            <h3>Higiene Garantizada</h3>
+            <p>
+              Estrictos protocolos de esterilización para proteger tu salud y
+              bienestar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Lo Que Dicen Nuestras Clientas</h2>
+          <p>Tu satisfacción es nuestra mejor carta de presentación</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "¡Increíble trabajo! Mis uñas acrílicas duraron más de un mes
+              intactas. El trato es súper amable y el lugar impecable. Volveré
+              sin duda."
+            </p>
+            <h4 class="client-name">Ana M.</h4>
+          </div>
+          <div class="testimonial-card reveal">
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Le mostré una foto de Pinterest para un diseño de Nail Art y lo
+              replicaron a la perfección. Tienen muchísima variedad de colores."
+            </p>
+            <h4 class="client-name">Valeria L.</h4>
+          </div>
+          <div class="testimonial-card reveal">
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="testimonial-text">
+              "El mejor manicure que me han hecho. Me relajo muchísimo cada vez
+              que voy. La atención al detalle es de otro nivel."
+            </p>
+            <h4 class="client-name">Sofía R.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Preguntas Frecuentes</h2>
+          <p>Resolvemos todas tus dudas</p>
+        </div>
+        <div class="faq-container reveal">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>¿Con cuánta anticipación debo agendar?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Recomendamos agendar con al menos 3 o 4 días de anticipación
+                para asegurar el horario que deseas, especialmente si requieres
+                servicios largos como esculpido acrílico o diseños complejos.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>¿Qué política de cancelación tienen?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Entendemos que pueden surgir imprevistos. Te pedimos que
+                canceles o reprogrames con al menos 24 horas de antelación para
+                poder ofrecer el espacio a otra clienta. Cancelaciones de último
+                minuto pueden requerir un depósito para futuras citas.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>¿Qué métodos de pago aceptan?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Aceptamos pagos en efectivo, transferencias bancarias y tarjetas
+                de crédito/débito en nuestro estudio en Homún, Yucatán.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer & Contact Form (Mailchimp) -->
+    <footer id="contacto" class="footer">
+      <div class="container footer-container">
+        <div class="footer-col">
+          <a href="#" class="logo footer-logo">
+            <i class="fa-solid fa-spa"></i> Sinails
+          </a>
+          <p>
+            Dedicadas a realzar la belleza natural de tus manos con diseños
+            únicos y atención inigualable.
+          </p>
+          <div class="footer-contact-info">
+            <p><i class="fa-solid fa-map-pin"></i> Homún, Yucatán</p>
+            <p><i class="fa-solid fa-phone"></i> +52 999 442 0354</p>
+          </div>
+          <!-- Social Media Integration -->
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/sinails_mx/?hl=es-la"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/share/1L9wmXM6D9/"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Horarios</h3>
+          <ul>
+            <li>Lunes - Viernes: 9am - 7pm</li>
+            <li>Sábados: 10am - 5pm</li>
+            <li>Domingos: Cerrado</li>
+          </ul>
+        </div>
+
+        <!-- Mailchimp Contact Form -->
+        <div class="footer-col newsletter-col">
+          <h3>Suscríbete</h3>
+          <p>Recibe ofertas exclusivas y novedades sobre nuestros diseños.</p>
+          <!-- Formulario simulado para Mailchimp -->
+          <form
+            class="mailchimp-form"
+            id="mc-embedded-subscribe-form"
+            method="post"
+            action="#"
+          >
+            <div class="input-group">
+              <input
+                type="email"
+                name="EMAIL"
+                placeholder="Tu correo electrónico"
+                required
+              />
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sinails. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp CTA -->
+    <a
+      href="https://wa.me/529994420354?text=Hola,%20me%20gustaría%20agendar%20una%20cita%20en%20Sinails"
+      class="whatsapp-cta"
+      target="_blank"
+      aria-label="Contactar por WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Toast Notification for Cart -->
+    <div id="toast" class="toast">Producto añadido al carrito</div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h2>Tu Carrito</h2>
+        <button class="close-cart" id="close-cart">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items-container">
+        <!-- Items will be injected here via JS -->
+        <p class="empty-cart-msg">Tu carrito está vacío.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-price">$0.00</span>
+        </div>
+        <button class="btn btn-primary checkout-btn" id="checkout-btn">
+          Agendar
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
