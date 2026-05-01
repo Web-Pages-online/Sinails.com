@@ -448,7 +448,42 @@
       </div>
     </section>
 
-    <!-- Footer & Contact Form (Mailchimp) -->
+    <!-- Newsletter Section (Prominence) -->
+    <section class="newsletter-section">
+      <div class="container reveal">
+        <div class="newsletter-content">
+          <h2>Únete a nuestra comunidad</h2>
+          <p>Suscríbete para recibir diseños exclusivos, promociones de temporada y tips para el cuidado de tus uñas.</p>
+          
+          <div id="mc_embed_signup">
+            <form action="https://sinails.us4.list-manage.com/subscribe/post?u=63c96d90c65e57f9c1e2df52c&amp;id=8fa7e5c145&amp;f_id=009c76eaf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-form" target="_blank">
+              <div id="mc_embed_signup_scroll">
+                <div class="input-row-premium">
+                  <div class="mc-field-group">
+                    <input type="text" name="FNAME" class="required" id="mce-FNAME" placeholder="Tu nombre" required="" value="">
+                  </div>
+                  <div class="mc-field-group">
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Tu mejor correo" required="" value="">
+                  </div>
+                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+                    Suscribirme
+                  </button>
+                </div>
+                <div id="mce-responses" class="clear foot">
+                  <div class="response" id="mce-error-response" style="display: none;"></div>
+                  <div class="response" id="mce-success-response" style="display: none;"></div>
+                </div>
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_63c96d90c65e57f9c1e2df52c_8fa7e5c145" tabindex="-1" value="">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer & Contact Form -->
     <footer id="contacto" class="footer">
       <div class="container footer-container">
         <div class="footer-col">
@@ -499,35 +534,34 @@
           </ul>
         </div>
 
-        <!-- Mailchimp Contact Form -->
-        <div class="footer-col newsletter-col">
-          <h3>Suscríbete</h3>
-          <p>Recibe ofertas exclusivas y novedades sobre nuestros diseños.</p>
-          <!-- Formulario simulado para Mailchimp -->
-          <form
-            class="mailchimp-form"
-            id="mc-embedded-subscribe-form"
-            method="post"
-            action="#"
-          >
-            <div class="input-group">
-              <input
-                type="email"
-                name="EMAIL"
-                placeholder="Tu correo electrónico"
-                required
-              />
-              <button type="submit" class="btn btn-primary">
-                <i class="fa-solid fa-paper-plane"></i>
-              </button>
-            </div>
-          </form>
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <p>¿Tienes dudas? Escríbenos por WhatsApp o visítanos en nuestro estudio.</p>
+          <a href="https://wa.me/529994420354" class="btn btn-outline btn-small">Hablar con nosotros</a>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Sinails. Todos los derechos reservados.</p>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+      (function($) {
+        window.fnames = new Array(); 
+        window.ftypes = new Array();
+        fnames[0]='EMAIL';ftypes[0]='email';
+        fnames[1]='FNAME';ftypes[1]='text';
+        fnames[2]='LNAME';ftypes[2]='text';
+        fnames[3]='ADDRESS';ftypes[3]='address';
+        fnames[4]='PHONE';ftypes[4]='phone';
+        fnames[5]='BIRTHDAY';ftypes[5]='birthday';
+        fnames[6]='COMPANY';ftypes[6]='text';
+      }(jQuery));
+      var $mcj = jQuery.noConflict(true);
+    </script>
 
     <!-- WhatsApp CTA -->
     <a
@@ -564,6 +598,8 @@
           Agendar
         </button>
       </div>
+    </div> <!-- Cierre de cart-sidebar -->
+
     <!-- Lightbox Modal -->
     <div id="lightbox" class="lightbox">
       <span class="lightbox-close">&times;</span>

@@ -762,32 +762,143 @@ h3 {
     transform: translateY(-3px);
 }
 
-/* Newsletter Form */
-.newsletter-col .input-group {
-    display: flex;
-    margin-top: 15px;
-}
-
-.newsletter-col input {
-    flex: 1;
-    padding: 12px 15px;
-    border: none;
-    border-radius: 30px 0 0 30px;
-    font-family: var(--font-body);
-    outline: none;
-}
-
-.newsletter-col .btn {
-    border-radius: 0 30px 30px 0;
-    padding: 12px 20px;
-}
-
-.footer-bottom {
+/* =========================================
+   NEWSLETTER SECTION (PREMIUM BANNER)
+   ========================================= */
+.newsletter-section {
+    padding: 100px 0;
+    background-color: var(--secondary-color);
     text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    color: #999;
-    font-size: 0.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter-section::before {
+    content: '\f1fb'; /* FontAwesome Paper Plane */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 15rem;
+    color: var(--white);
+    opacity: 0.2;
+    transform: rotate(-15deg);
+}
+
+.newsletter-content {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-content p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.input-row-premium {
+    display: flex;
+    gap: 15px;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.input-row-premium .mc-field-group {
+    flex: 1;
+}
+
+.input-row-premium input {
+    width: 100%;
+    border: none;
+    padding: 12px 20px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+    color: var(--text-dark);
+    background: transparent;
+}
+
+/* Border between inputs on desktop */
+.input-row-premium .mc-field-group:first-child {
+    border-right: 1px solid #eee;
+}
+
+.input-group-premium input::placeholder {
+    color: #bbb;
+}
+
+.input-row-premium .btn {
+    border-radius: 50px;
+    padding: 15px 35px;
+    white-space: nowrap;
+}
+
+/* Mobile Responsive Adjustments for Form */
+@media (max-width: 768px) {
+    .input-row-premium {
+        flex-direction: column;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        gap: 10px;
+    }
+    
+    .input-row-premium .mc-field-group {
+        width: 100%;
+        background: var(--white);
+        border-radius: 50px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        border-right: none !important;
+    }
+    
+    .input-row-premium .btn {
+        width: 100%;
+    }
+}
+
+/* Mailchimp Response Messages */
+#mce-responses {
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.response {
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#mce-error-response {
+    background: #fdf2f2;
+    color: #9b1c1c;
+    border: 1px solid #fbd5d5;
+}
+
+#mce-success-response {
+    background: #f3faf7;
+    color: #03543f;
+    border: 1px solid #def7ec;
+}
+
+/* Footer Adjustments (Cleanup) */
+.footer-col h3 {
+    color: var(--white);
 }
 
 /* =========================================
